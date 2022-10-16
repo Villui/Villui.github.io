@@ -117,11 +117,15 @@ function GetMap() {
             58.38500, 
             24.48833
         );
+    let center = new Microsoft.Maps.Location(
+            (58.38500+58.38104)/2,
+            (26.71992+24.48833)/2
+        );
 
     map = new Microsoft.Maps.Map("#map", {
         credentials: mapAPIKey,
-        center: centerPoint,
-        zoom: 7,
+        center: center,
+        zoom: 8,
         mapTypeId: Microsoft.Maps.MapTypeId.road,
         disablePanning: true
     });
