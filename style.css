@@ -1,90 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+.gallery-image img {
+    border-radius: 50%;
+    width: 100%;
+}
+    
+header h1 {
 
-/*
-font-family: 'PT Sans', sans-serif;
-font-family: 'PT Serif', serif;
-*/
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+    line-height: 70px;
+    text-transform: uppercase;
+    
+}
+    
+header h2 {
+    
+    text-align: center;
+    font-family: "Gentium Basic", serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: black;
+    text-transform: uppercase;
+    
+}
 
-section, div {
-    padding: 15px;
+header img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+header nav ul {
+
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+    display:flex;
+    
+}
+    
+header nav ul li {
+    
+    display: inline-block;
+    padding: 16px 16px;
+    
+}
+
+
+nav ul li a {
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+
+footer {
+
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #172029;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+
+footer ul {
+
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+    
+}
+    
+footer ul li {
+    
+    display: block;
+    
+}
+    
+footer ul li p {
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+}
+
+.footer-sm {
+
+    width: 32px;
+    float: right;
+    
+}
+    
+.footer-sm img {
+    
+    margin-top: 30px;
+    width: 100%;
+    
 }
 
 hr {
-    padding-top: 20px;
-}
 
-h3 { 
-    font-family: 'PT Serif', serif;
-    font-size: 18px;
-    margin: 2px;    
+    color: #4f5663;
+    border-width: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    
 }
-
-.box {
-    padding: 5px;
-    margin-left: 20px;
-}
-
-p, label, form {
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    margin: 2px;
-}
-
-#form {
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#input-field label {
-  display: inline-block;
-  width: 115px;
-  text-align: right;
-}
-
-#dropdown {
-    margin-left: 30px;
-    padding: 5px;
-}
-
-.hind {
-    float: right;
-}
-
-#calc {
-    margin-left: 25px;
-}
-
-#clock {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: 'PT Serif', serif;
-    letter-spacing: 3px;
-}
-
-input[type=submit] {
-    background-color: #008000;
-    color: #FFF;
-    border-radius: 15px;
-    border: none;
-    font-family: 'PT Serif', serif;
-    font-size: 24px;
+    
+.meist {
+    
+    font-family: "Gentium Basic", sans-serif;
     font-weight: 600;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-left: 15%;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+    
 }
 
-#map {
+.meist-div {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tekstidiv {
+    padding-left: 15%;
+    width: 100%;
+}
+
+.pildidiv {
+    max-width: 50%;
+    display: none;
+}
+
+.meist-div div img{
+    max-height: 300px;
+    max-width: 100%;
+    display: none;
+
+}
+
+.meist-div div p {
+    
+    font-family: "Gentium Basic", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #3a383d;
+    text-align: left;
+    
+}
+
+.gallery-image {
+
+    margin: 10px;
     position: relative;
-    width: 1000px;
-    height: 300px;
-    margin: auto;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    
+} 
+    
+.post-header {       
+    
+    /*kujundus*/
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 18px #111111;
+    
+       /*positsioneerimine*/
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.gallery-links {
+
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+@media only screen and (min-width: 950px) {    
+    
+    .meist-div div img {
+        display: flex;
+    }
+
+    header img {
+        width: 90%;
+    }
+
+    header h1 a {
+    
+          font-size: 80px;
+    
+    }  
+    
+    header h2 {
+    
+          font-size: 20px;
+          margin-top: 20px;
+    
+    }
+    
+    header nav ul li {
+    
+           padding: 16px 125px;
+    
+    } 
+
+    .tekstidiv {
+        max-width: 35%;
+    }
+
+    .pildidiv {
+        display: flex;
+    }
 }
